@@ -1,3 +1,12 @@
-## Polish:
-Repozytorium to jest stworzone z myślą o wszystkich osobych uczęszczających na warsztaty z uczenia maszynowego oragnizowanego
-przez Koło Matematyki Stosowanej (w skrócie KMS) na toruńskim Uniwersytecie Mikołaja Kopernika
+# Polish:
+
+## Krótko o repozytorium:
+Repozytorium zostało założone dla wszystkich osób uczęszczających na warsztaty z uczenia maszynowego
+prowadzone przez Koło Matematyki Stosowanej na Uniwersytecie Mikołaja Kopernika w Toruniu.
+Znajdziecie tu między innymi kody z zajęć jak również i prezentacji, przydatne jupyter notebooki, a także
+zadania do sprawdzenia swojej wiedzy. 
+
+## Wstępny plan: 
+- Co to jest uczenie maszynowe? 
+- Perceptron
+
