@@ -20,7 +20,7 @@ class Perceptron:
         return dot
 
     def forward(self, dataX):
-        dot = np.dot(dataX, self.weights[1:]) + self.weights[0]
+        dot = np.dot(dataX, self.weights[1:]) - self.weights[0]
         dot = self.activ_func(dot)
         return dot
 
@@ -32,7 +32,7 @@ class Perceptron:
             for data, label in zip(x_train, y_train):
                 prediction = self.forward(data)
                 self.weights[1:] += self.learningRate * (label - prediction) * data
-                self.weights[0] += self.learningRate * (label - prediction)
+                self.weights[0] -= self.learningRate * (label - prediction)
                 loss += 0.5 * (label - prediction) ** 2
                 if int(label) - prediction == 0:
                     accuracy += 1
@@ -43,7 +43,7 @@ class Perceptron:
     def predict(self, x):
         return self.forward(x)
 
-per = Perceptron(2, 0.01, 100)
+per = Perceptron(2, 0.01, 10)
 dataX = np.array([[1, 1], [1, 0], [0, 0], [0, 1]])
 dataY = np.array([[1], [0], [0], [0]])
 per.train(dataX, dataY)
