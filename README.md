@@ -7,6 +7,8 @@ Znajdziecie tu między innymi kody z zajęć jak również i prezentacji, przyda
 zadania do sprawdzenia swojej wiedzy. 
 
 ## Wstępny plan: 
-- Co to jest uczenie maszynowe? 
-- Perceptron
+- Wprowadzenie do KMS 
+- Wstęp do Pythona czyli jak rozmawiać z wężem 1/2
+- Wstęp do Pythona czyli jak rozmawiać z wężem 2/2
+
 
