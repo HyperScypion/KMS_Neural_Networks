@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+# coding: utf-8
+
+
+def return_generate():
+	a, b = [], []
+	for i in range(1, 12345):
+		a.append(i)
+		for j in range(1, 12345):
+			b.append(j)
+		a += b
+	return a
+
+
+g = return_generate()
+for i in g:
+	print(i)
