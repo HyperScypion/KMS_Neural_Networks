@@ -20,3 +20,8 @@ $ pip3 install -r requirements
 ```bash
 $ pip3 install <module_name>
 ```
+### Sposób alternatywny
+```bash
+$ python3 -m pip install <module_name>
+$ python3 -m pip install -r requirements
+```
