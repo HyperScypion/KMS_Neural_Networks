@@ -11,4 +11,7 @@ zadania do sprawdzenia swojej wiedzy.
 - Wstęp do Pythona czyli jak rozmawiać z wężem 1/2
 - Wstęp do Pythona czyli jak rozmawiać z wężem 2/2
 
-
+## Instalacja modułów za pomocą pip-a:
+```bash
+$ pip3 install -r requirements
+```
