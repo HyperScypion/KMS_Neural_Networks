@@ -12,6 +12,11 @@ zadania do sprawdzenia swojej wiedzy.
 - Wstęp do Pythona czyli jak rozmawiać z wężem 2/2
 
 ## Instalacja modułów za pomocą pip-a:
+### Za pomocą pliku requirements
 ```bash
 $ pip3 install -r requirements
+```
+### Za pomocą nazwy modułu
+```bash
+$ pip3 install <module_name>
 ```
