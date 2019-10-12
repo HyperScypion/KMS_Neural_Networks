@@ -4,3 +4,9 @@ scikit-learn
 scipy
 matplotlib
 pandas
+torch
+torchvision
+pytorch-ignite
+tensorflow
+tensorflow-gpu
+keras
