@@ -1,2 +1,9 @@
 __pycache__/*
 .ipynb_checkpoints
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
