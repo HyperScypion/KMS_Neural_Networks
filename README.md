@@ -7,9 +7,9 @@ Znajdziecie tu między innymi kody z zajęć jak również i prezentacji, przyda
 zadania do sprawdzenia swojej wiedzy. 
 
 ## Wstępny plan: 
-- Wprowadzenie do KMS 
-- Wstęp do Pythona czyli jak rozmawiać z wężem 1/2
-- Wstęp do Pythona czyli jak rozmawiać z wężem 2/2
+- Wprowadzenie do KMS :ballot_box_with_check:
+- Wstęp do Pythona czyli jak rozmawiać z wężem 1/2 :snake:
+- Wstęp do Pythona czyli jak rozmawiać z wężem 2/2 :snake:
 
 ## Instalacja modułów za pomocą pip-a:
 ### Za pomocą pliku requirements
