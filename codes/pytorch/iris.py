@@ -5,6 +5,7 @@ import torch.nn as nn
 import torch.optim as optim
 import torch.nn.functional as F
 from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
 
 
 # IN BEST 98,10% Training Acc
