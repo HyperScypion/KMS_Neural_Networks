@@ -14,7 +14,7 @@ zadania do sprawdzenia swojej wiedzy.
 ## Instalacja modułów za pomocą pip-a:
 ### Za pomocą pliku requirements
 ```bash
-$ pip3 install -r requirements
+$ pip3 install -r <file_name>
 ```
 ### Za pomocą nazwy modułu
 ```bash
@@ -23,5 +23,15 @@ $ pip3 install <module_name>
 ### Sposób alternatywny
 ```bash
 $ python3 -m pip install <module_name>
-$ python3 -m pip install -r requirements
+$ python3 -m pip install -r <file_name>
+```
+
+### Instalacja za pomocą condy
+```bash
+$ conda install <module_name>
+```
+
+### Sposób alternatywny
+```bash
+$ conda install --file <file_name>
 ```
