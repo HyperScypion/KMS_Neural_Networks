@@ -14,51 +14,51 @@ zadania do sprawdzenia swojej wiedzy.
 ## Drzewo katalogów
 ```
 KMS_Neural_Networks
-|   LICENSE
-|   README.md
-|   requirements
-|
+│   LICENSE
+│   README.md
+│   requirements
+│
 └───codes
-|   |
-|   └───keras
-|   |    │   irys.py
-|   |
-|   └───pure_python
-|   |    |   activations.py
-|   |    |
-|   |    └───percetrons
-|   |           |   perceptron.py
-|   └───pytorch
-|   |    │   irys.py
-|   |
-|   └───tensorjs
-|   |    │   index.html
-|   |    |    ...
-|   |
+│   │
+│   └───keras
+│   │    │   irys.py
+│   │
+│   └───pure_python
+│   │    │   activations.py
+│   │    │
+│   │    └───percetrons
+│   │           │   perceptron.py
+│   └───pytorch
+│   │    │   irys.py
+│   │
+│   └───tensorjs
+│   │    │   index.html
+│   │    │    ...
+│   │
 └───lectures
-|   │   first_lecture
-|   |    |
-|   |    |   links.txt
-|   |    └───presentation
-|   |           |   presentation.pptx
-|   │   second_lecture
-|   |    |
-|   |    └───codes
-|   |           |   ...
-|   |    |
-|   |    └───notebooks
-|   |           |   ...
-|   |    |
-|   |    └───presentation
-|   |           |   ...
+│   │   first_lecture
+│   │    │
+│   │    │   links.txt
+│   │    └───presentation
+│   │           │   presentation.pptx
+│   │   second_lecture
+│   │    │
+│   │    └───codes
+│   │           │   ...
+│   │    │
+│   │    └───notebooks
+│   │           │   ...
+│   │    │
+│   │    └───presentation
+│   │           │   ...
 └───notebooks
-|   │   hello_from_jupyter.ipynb
-|   |
-|   └───pytorch
-|   |    |
-|   |    |   mnist_mlp.ipynb
-|   |    └───MNIST
-|   |           |   ...
+│   │   hello_from_jupyter.ipynb
+│   │
+│   └───pytorch
+│   │    │
+│   │    │   mnist_mlp.ipynb
+│   │    └───MNIST
+│   │           │   ...
 ```
 
 ## Instalacja modułów za pomocą pip-a:
