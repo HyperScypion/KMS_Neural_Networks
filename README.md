@@ -11,6 +11,56 @@ zadania do sprawdzenia swojej wiedzy.
 - Wstęp do Pythona czyli jak rozmawiać z wężem 1/2 :snake:
 - Wstęp do Pythona czyli jak rozmawiać z wężem 2/2 :snake:
 
+## Drzewo katalogów
+```
+KMS_Neural_Networks
+|   LICENSE
+|   README.md
+|   requirements
+|
+└───codes
+|   |
+|   └───keras
+|   |    │   irys.py
+|   |
+|   └───pure_python
+|   |    |   activations.py
+|   |    |
+|   |    └───percetrons
+|   |           |   perceptron.py
+|   └───pytorch
+|   |    │   irys.py
+|   |
+|   └───tensorjs
+|   |    │   index.html
+|   |    |    ...
+|   |
+└───lectures
+|   │   first_lecture
+|   |    |
+|   |    |   links.txt
+|   |    └───presentation
+|   |           |   presentation.pptx
+|   │   second_lecture
+|   |    |
+|   |    └───codes
+|   |           |   ...
+|   |    |
+|   |    └───notebooks
+|   |           |   ...
+|   |    |
+|   |    └───presentation
+|   |           |   ...
+└───notebooks
+|   │   hello_from_jupyter.ipynb
+|   |
+|   └───pytorch
+|   |    |
+|   |    |   mnist_mlp.ipynb
+|   |    └───MNIST
+|   |           |   ...
+```
+
 ## Instalacja modułów za pomocą pip-a:
 ### Za pomocą pliku requirements
 ```bash
@@ -35,3 +85,6 @@ $ conda install <module_name>
 ```bash
 $ conda install --file <file_name>
 ```
+## Instalacja Jupyter-a
+### Przez pip-a
+Jupyter jest podany jako jeden z modułów w pliku requirements.
