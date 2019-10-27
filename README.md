@@ -9,7 +9,7 @@ zadania do sprawdzenia swojej wiedzy.
 ## Wstępny plan: 
 - Wprowadzenie do KMS :ballot_box_with_check:
 - Wstęp do Pythona czyli jak rozmawiać z wężem :snake: :ballot_box_with_check:
-- Wstęp do Uczenia Maszynowego - Regresja Liniowa 
+- Wstęp do Uczenia Maszynowego - Perceptron :ballot_box_with_check: 
 
 ## Drzewo katalogów
 ```
