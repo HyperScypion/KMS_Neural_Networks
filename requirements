@@ -11,3 +11,5 @@ tensorflow
 tensorflow-gpu
 keras
 jupyter
+pybrain
+pygame
