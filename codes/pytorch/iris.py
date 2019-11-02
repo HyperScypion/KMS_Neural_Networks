@@ -132,7 +132,7 @@ net.eval()
 
 net.to(device)
 
-# Testowanie sieci na danych uczących UWAGA TO JEST ZŁY NAWYK
+# Testowanie sieci na danych, których sieć jeszcze "nie widziała"
 
 validation_accuracy = 0
 for data, target in zip(x_test, y_test):
