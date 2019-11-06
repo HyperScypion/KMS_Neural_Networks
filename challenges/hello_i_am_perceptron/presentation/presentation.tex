@@ -1,0 +1,156 @@
+\documentclass[16pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+ 
+%Information to be included in the title page:
+\title{Wstęp do uczenia maszynowego}
+\subtitle{Perceptron - przypomnienie}
+\author{Tomasz Derek}
+\institute{KMS}
+\date{Listopad 6, 2019}
+ 
+\begin{document}
+ 
+\frame{\titlepage}
+ 
+\begin{frame}
+\frametitle{Typ uczenia}
+\begin{center}
+Perceptron - uczenie z nadzorowane
+\end{center}
+\end{frame} 
+ 
+\begin{frame}
+\frametitle{Ogólny zapis perceptronu progowego}
+\[
+    O(x_1, ..., x_n) = f(\sum_{i=1}^{n}x_iw_i + w_0)
+\]
+\begin{center}
+    lub też
+\end{center}
+\[
+    O(x_1, ..., x_n) = f(\sum_{i=1}^{n}x_iw_i - \theta)
+\]
+\end{frame} 
+ 
+\begin{frame}
+\frametitle{Funkcja progowa}
+\[ f(x) =
+  \begin{cases}
+    -1       & \quad x < 0\\
+    +1  & \quad x \geq 0
+  \end{cases}
+\]
+\end{frame}
+
+\begin{frame}
+\frametitle{SPLA}
+SPLA = Simple Perceptron Learning Algorithm
+\begin{itemize}
+  \item Wylosuj wagi o wartościach bliskich 0
+  \item Wybieramy losowy/kolejny przykład E z danych uczących i odpowiadającą mu
+odpowiedź T
+  \item Obliczamy pobudzenie sieci dla wybranego przykładu
+  \item Obliczamy błąd
+  \item Jeżeli błąd jest równy zero wróć do kroku 2
+  \item W przeciwnym wypadku zaktualizuj wagi zgodnie ze wzorem
+  \[
+  w_i = w_i + \eta * ERR * E
+  \]
+  \[
+  \theta = \theta - \eta * ERR
+  \]
+  \item Wróć do kroku 2
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pocket Learning Algorithm}
+\begin{itemize}
+  \item Wylosuj wagi o wartościach bliskich 0,
+  przypisujemy układowi wag zerowy czas życia i zapisujemy go w kieszonce
+  \item Przebiegnij w sposób losowy po przykładach uczących
+  \item Oblicz błąd sieci
+  \item Jeżeli błąd jest równy zero, zwiększ czas życia o jeden, jeżeli wynik jest lepszy od rekordzisty to obecny perceptron zostaje rekordzistą, w kieszonce zapisz wagi, a następnie wróć do kroku 2
+  \item W przeciwnym wypadku zaktualizuj wagi zgodnie ze wzorem
+  \[
+  w_i = w_i + \eta * ERR * E
+  \]
+  \[
+  \theta = \theta - \eta * ERR
+  \]
+  Przypisz zerowy czas życia i wróć do punktu 2.
+  \item Zakończ po przebiegnięciu odpowiedniej liczby iteracji.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pocket Learning Algorithm with Ratchet}
+\begin{itemize}
+  \item Wylosuj wagi o wartościach bliskich 0,
+  przypisujemy układowi wag zerowy czas życia i zapisujemy go w kieszonce
+  \item Przebiegnij w sposób losowy po przykładach uczących
+  \item Oblicz błąd sieci
+  \item Jeżeli jest to wynik lepszy od rekordzisty i \textbf{i klasyfikuje więcej przykładów niż rekordzista}, to staje się nowym rekordzistą, zapisz jego wagi, a następnie wróć do kroku 2
+  \item W przeciwnym wypadku zaktualizuj wagi zgodnie ze wzorem
+  \[
+  w_i = w_i + \eta * ERR * E
+  \]
+  \[
+  \theta = \theta - \eta * ERR
+  \]
+  Przypisz zerowy czas życia i wróć do punktu 2.
+  \item Zakończ po przebiegnięciu odpowiedniej liczby iteracji.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Czego będziemy dziś potrzebować?}
+\begin{center}
+ALGEBRY
+\end{center}
+\begin{figure}[ht]
+\includegraphics[scale=0.5]{./algebra.jpg}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Czego będziemy dziś potrzebować?}
+\begin{center}
+Metody z modułu NumPy:
+\begin{itemize}
+	\item dot()
+	\item random.randn() lub zeros()
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Czego będziemy dziś potrzebować?}
+\begin{center}
+Metody z modułu DataLoader:
+\begin{itemize}
+\item create\_dataset()
+\item random\_sample()
+\end{itemize}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Koniec?}
+\begin{figure}[ht]
+\includegraphics[scale=1]{./terminator.jpeg}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Koniec?}
+\begin{figure}[ht]
+\includegraphics[scale=0.2]{./andrew(1).png}
+\end{figure}
+\end{frame}
+
+\end{document}https://github.com/HyperScypion/KMS_Neural_Networks/tree/master/challenges/third_lecture/notebooks
