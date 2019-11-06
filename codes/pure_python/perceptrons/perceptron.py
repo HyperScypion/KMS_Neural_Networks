@@ -10,7 +10,7 @@ class Perceptron:
         self.epochs = epochs
 
     def activ_func(self, dot):
-        if dot > 0:
+        if dot >= 0:
             dot = 1
         else:
             dot = 0
@@ -29,7 +29,7 @@ class Perceptron:
             for data, label in zip(x_train, y_train):
                 prediction = self.forward(data)
                 self.weights[1:] += self.learningRate * (label - prediction) * data
-                self.weights[0] -= self.learningRate * (label - prediction)
+                self.weights[0] += self.learningRate * (label - prediction)
                 loss += 0.5 * (label - prediction) ** 2
                 if int(label) - prediction == 0:
                     accuracy += 1
@@ -48,3 +48,4 @@ print(per.predict(np.array([[1, 1]])))
 print(per.predict(np.array([[1, 0]])))
 print(per.predict(np.array([[0, 1]])))
 print(per.predict(np.array([[0, 0]])))
+print(per.weights)
